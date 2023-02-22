@@ -23,146 +23,85 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+  
+        private void btn1_Click(object sender, EventArgs e)
         {
-
-            this.textBox1.Text = "";      //Clears textbox
-            input += "1";
-            this.textBox1.Text += input;  //Add input to the textbox
-
+            textBox1.Text += btn1.Text; 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn2_Click(object sender, EventArgs e)
         {
-
-            this.textBox1.Text = "";
-            input += "2";
-            this.textBox1.Text += input;
-
+            textBox1.Text += btn2.Text;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btn3_Click(object sender, EventArgs e)
         {
-
-            this.textBox1.Text = "";
-            input += "3";
-            this.textBox1.Text += input;
-
-
+            textBox1.Text += btn3.Text;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btn4_Click(object sender, EventArgs e)
         {
-
-            this.textBox1.Text = "";
-            input += "4";
-            this.textBox1.Text += input;
-
-
+            textBox1.Text += btn4.Text;
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btn5_Click(object sender, EventArgs e)
         {
-
-            this.textBox1.Text = "";
-            input += "5";
-            this.textBox1.Text += input;
-
+            textBox1.Text += btn5.Text;
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void btn6_Click(object sender, EventArgs e)
         {
-
-            this.textBox1.Text = "";
-            input += "6";
-            this.textBox1.Text += input;
-
+            textBox1.Text += btn6.Text;
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void btn7_Click(object sender, EventArgs e)
         {
-
-            this.textBox1.Text = "";
-            input += "7";
-            this.textBox1.Text += input;
-
+            textBox1.Text += btn7.Text;
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void btn8_Click(object sender, EventArgs e)
         {
-
-            this.textBox1.Text = "";
-            input += "8";
-            this.textBox1.Text += input;
-
+            textBox1.Text += btn8.Text;
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void btn9_Click(object sender, EventArgs e)
         {
-
-            this.textBox1.Text = "";
-            input += "9";
-            this.textBox1.Text += input;
-
+            textBox1.Text += btn9.Text;
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void btn0_Click(object sender, EventArgs e)
         {
-
-            this.textBox1.Text = "";
-            input += "0";
-            this.textBox1.Text += input;
-
+            textBox1.Text += btn0.Text;
         }
 
-        private void button11_Click(object sender, EventArgs e) //dot
+        private void btndot_Click(object sender, EventArgs e)
         {
-
-            input += ".";
-
+            textBox1.Text += btndot.Text;
         }
 
-        private void button15_Click(object sender, EventArgs e) //divide sign
+        private void btndivide_Click(object sender, EventArgs e)
         {
-
-            operand1 = input;          //set first input
-            operation = '/';           //set operation
-            input = string.Empty;      //clear input to record next value
-
-        }
-        private void button16_Click(object sender, EventArgs e) //multiply
-        {
-
-            operand1 = input;
-            operation = '*';
-            input = string.Empty;
-
-        }
-        private void button17_Click(object sender, EventArgs e) //minus
-        {
-
-            operand1 = input;
-            operation = '-';
-            input = string.Empty;
-
-        }
-        private void button18_Click(object sender, EventArgs e) //plus
-        {
-
-            operand1 = input;
-            operation = '+';
-            input = string.Empty;
-
+            textBox1.Text += btn2.Text;
         }
 
-        private void button19_Click(object sender, EventArgs e) //equals
+        private void btnmulti_Click(object sender, EventArgs e)
         {
-
-
-
+            textBox1.Text += btn2.Text;
         }
 
+        private void btnminus_Click(object sender, EventArgs e)
+        {
+            textBox1.Text += btn2.Text;
+        }
 
+        private void btnplus_Click(object sender, EventArgs e)
+        {
+            textBox1.Text += btn2.Text;
+        }
 
+        private void btnequals_Click(object sender, EventArgs e)
+        {
+            textBox1.Text += btn2.Text;
+        }
     }
 }
