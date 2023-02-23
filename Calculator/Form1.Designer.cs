@@ -41,9 +41,9 @@
             this.btn9 = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
             this.btndot = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.btnclear = new System.Windows.Forms.Button();
+            this.btnsigns = new System.Windows.Forms.Button();
+            this.btnsqrt = new System.Windows.Forms.Button();
             this.btndivide = new System.Windows.Forms.Button();
             this.btnmulti = new System.Windows.Forms.Button();
             this.btnminus = new System.Windows.Forms.Button();
@@ -184,38 +184,40 @@
             this.btndot.UseVisualStyleBackColor = true;
             this.btndot.Click += new System.EventHandler(this.btndot_Click);
             // 
-            // button12
+            // btnclear
             // 
-            this.button12.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(26, 58);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(40, 40);
-            this.button12.TabIndex = 12;
-            this.button12.Text = "A/C";
-            this.button12.UseVisualStyleBackColor = false;
+            this.btnclear.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnclear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnclear.Location = new System.Drawing.Point(26, 58);
+            this.btnclear.Name = "btnclear";
+            this.btnclear.Size = new System.Drawing.Size(40, 40);
+            this.btnclear.TabIndex = 12;
+            this.btnclear.Text = "A/C";
+            this.btnclear.UseVisualStyleBackColor = false;
+            this.btnclear.Click += new System.EventHandler(this.button12_Click);
             // 
-            // button13
+            // btnsigns
             // 
-            this.button13.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(72, 58);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(40, 40);
-            this.button13.TabIndex = 13;
-            this.button13.Text = "+/-";
-            this.button13.UseVisualStyleBackColor = false;
+            this.btnsigns.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnsigns.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsigns.Location = new System.Drawing.Point(72, 58);
+            this.btnsigns.Name = "btnsigns";
+            this.btnsigns.Size = new System.Drawing.Size(40, 40);
+            this.btnsigns.TabIndex = 13;
+            this.btnsigns.Text = "+/-";
+            this.btnsigns.UseVisualStyleBackColor = false;
             // 
-            // button14
+            // btnsqrt
             // 
-            this.button14.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(118, 58);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(40, 40);
-            this.button14.TabIndex = 14;
-            this.button14.Text = "%";
-            this.button14.UseVisualStyleBackColor = false;
+            this.btnsqrt.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnsqrt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsqrt.Location = new System.Drawing.Point(118, 58);
+            this.btnsqrt.Name = "btnsqrt";
+            this.btnsqrt.Size = new System.Drawing.Size(40, 40);
+            this.btnsqrt.TabIndex = 14;
+            this.btnsqrt.Text = "√";
+            this.btnsqrt.UseVisualStyleBackColor = false;
+            this.btnsqrt.Click += new System.EventHandler(this.btnsqrt_Click);
             // 
             // btndivide
             // 
@@ -288,9 +290,9 @@
             this.Controls.Add(this.btnminus);
             this.Controls.Add(this.btnmulti);
             this.Controls.Add(this.btndivide);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button12);
+            this.Controls.Add(this.btnsqrt);
+            this.Controls.Add(this.btnsigns);
+            this.Controls.Add(this.btnclear);
             this.Controls.Add(this.btndot);
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btn9);
@@ -328,9 +330,9 @@
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btndot;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button btnclear;
+        private System.Windows.Forms.Button btnsigns;
+        private System.Windows.Forms.Button btnsqrt;
         private System.Windows.Forms.Button btndivide;
         private System.Windows.Forms.Button btnmulti;
         private System.Windows.Forms.Button btnminus;
