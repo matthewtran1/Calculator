@@ -13,7 +13,6 @@ namespace Calculator
     public partial class Form1 : Form
     {
 
-        string total;
         double num1;
         double num2;
         string operation;
@@ -23,7 +22,8 @@ namespace Calculator
             InitializeComponent();
         }
 
-  
+
+
         private void btn1_Click(object sender, EventArgs e) //add text to textbox depending on the btn pressed
         {
             textBox1.Text += "1"; 
@@ -81,9 +81,9 @@ namespace Calculator
 
         private void btndivide_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox1.Text))
+            if (string.IsNullOrEmpty(textBox1.Text))                //check if textbox is empty
             {
-                //do nothing
+                //do nothing if empty
             }
             else
             {
@@ -131,7 +131,7 @@ namespace Calculator
             {
                 operation = "+";                        //Set operation
                 num1 = int.Parse(textBox1.Text);        //Set num1 to textbox text
-                textBox1.Clear();                       //clear textbox for next input
+                textBox1.Clear();                        //clear textbox for next input
             }
         }
 
@@ -176,24 +176,60 @@ namespace Calculator
 
         private void btnsqrt_Click(object sender, EventArgs e)          //sqrt button
         {
-            if (textBox1.Text == result + "")
+
+            if (string.IsNullOrEmpty(textBox1.Text))
+            {
+                //do nothing
+            }
+            else if (textBox1.Text == result + "")
             {
 
                 result = Math.Sqrt(result);
+                textBox1.Text = result + "";
+
 
             }
-            else if (textBox1.Text == num1 + "")
+            else
             {
+                                       
+
+                num1 = int.Parse(textBox1.Text);        //Set num1 to textbox text
                 num1 = Math.Sqrt(num1);
+                textBox1.Text = num1 + "";          //error if sqrt again
 
-            }
-            else if (textBox1.Text == num2 + "")
-            {
-                num2 = Math.Sqrt(num2);
 
             }
         }
 
+        private void btnsigns_Click(object sender, EventArgs e)         //button to change the sign of the number
+        {
 
+            if (string.IsNullOrEmpty(textBox1.Text))
+            {
+                //do nothing
+            }
+            else
+            {
+
+                if (!textBox1.Text.Contains("-")) //Checks if there is no negative sign, if so add a negative sign at index 0
+                {
+
+
+                    textBox1.Text = textBox1.Text.Insert(0, "-");               
+
+
+                }
+
+                else if (textBox1.Text.Contains("-"))  //checks if there is a negative  sign, if so remove negative sign
+                {
+
+                    textBox1.Text = textBox1.Text.Replace("-", "");
+
+                }
+            }
+
+            
+
+        }
     }
 }
