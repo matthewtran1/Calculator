@@ -43,7 +43,7 @@
             this.btndot = new System.Windows.Forms.Button();
             this.btnclear = new System.Windows.Forms.Button();
             this.btnsigns = new System.Windows.Forms.Button();
-            this.btnsqrt = new System.Windows.Forms.Button();
+            this.btnremove = new System.Windows.Forms.Button();
             this.btndivide = new System.Windows.Forms.Button();
             this.btnmulti = new System.Windows.Forms.Button();
             this.btnminus = new System.Windows.Forms.Button();
@@ -192,32 +192,33 @@
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(40, 40);
             this.btnclear.TabIndex = 12;
-            this.btnclear.Text = "A/C";
+            this.btnclear.Text = "C";
             this.btnclear.UseVisualStyleBackColor = false;
             this.btnclear.Click += new System.EventHandler(this.button12_Click);
             // 
             // btnsigns
             // 
             this.btnsigns.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnsigns.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsigns.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsigns.Location = new System.Drawing.Point(72, 58);
             this.btnsigns.Name = "btnsigns";
             this.btnsigns.Size = new System.Drawing.Size(40, 40);
             this.btnsigns.TabIndex = 13;
             this.btnsigns.Text = "+/-";
             this.btnsigns.UseVisualStyleBackColor = false;
+            this.btnsigns.Click += new System.EventHandler(this.btnsigns_Click);
             // 
-            // btnsqrt
+            // btnremove
             // 
-            this.btnsqrt.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnsqrt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsqrt.Location = new System.Drawing.Point(118, 58);
-            this.btnsqrt.Name = "btnsqrt";
-            this.btnsqrt.Size = new System.Drawing.Size(40, 40);
-            this.btnsqrt.TabIndex = 14;
-            this.btnsqrt.Text = "√";
-            this.btnsqrt.UseVisualStyleBackColor = false;
-            this.btnsqrt.Click += new System.EventHandler(this.btnsqrt_Click);
+            this.btnremove.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnremove.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnremove.Location = new System.Drawing.Point(118, 58);
+            this.btnremove.Name = "btnremove";
+            this.btnremove.Size = new System.Drawing.Size(40, 40);
+            this.btnremove.TabIndex = 14;
+            this.btnremove.Text = "x";
+            this.btnremove.UseVisualStyleBackColor = false;
+            this.btnremove.Click += new System.EventHandler(this.btnsqrt_Click);
             // 
             // btndivide
             // 
@@ -290,7 +291,7 @@
             this.Controls.Add(this.btnminus);
             this.Controls.Add(this.btnmulti);
             this.Controls.Add(this.btndivide);
-            this.Controls.Add(this.btnsqrt);
+            this.Controls.Add(this.btnremove);
             this.Controls.Add(this.btnsigns);
             this.Controls.Add(this.btnclear);
             this.Controls.Add(this.btndot);
@@ -332,7 +333,7 @@
         private System.Windows.Forms.Button btndot;
         private System.Windows.Forms.Button btnclear;
         private System.Windows.Forms.Button btnsigns;
-        private System.Windows.Forms.Button btnsqrt;
+        private System.Windows.Forms.Button btnremove;
         private System.Windows.Forms.Button btndivide;
         private System.Windows.Forms.Button btnmulti;
         private System.Windows.Forms.Button btnminus;

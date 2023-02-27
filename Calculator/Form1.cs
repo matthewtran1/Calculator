@@ -17,6 +17,8 @@ namespace Calculator
         double num2;
         string operation;
         double result;
+        double sqrtNum;
+     
         public Form1()
         {
             InitializeComponent();
@@ -26,12 +28,14 @@ namespace Calculator
 
         private void btn1_Click(object sender, EventArgs e) //add text to textbox depending on the btn pressed
         {
-            textBox1.Text += "1"; 
+            textBox1.Text += "1";
+         
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
             textBox1.Text += "2";
+ 
         }
 
         private void btn3_Click(object sender, EventArgs e)
@@ -160,6 +164,7 @@ namespace Calculator
                     case "/":
                         result = num1 / num2;
                         break;
+   
                 }
 
                 textBox1.Text = result + "";            //convert to string      
@@ -174,31 +179,22 @@ namespace Calculator
             num2 = 0;
         }
 
-        private void btnsqrt_Click(object sender, EventArgs e)          //sqrt button
+        private void btnsqrt_Click(object sender, EventArgs e)          //remove last number inputted
         {
 
             if (string.IsNullOrEmpty(textBox1.Text))
             {
                 //do nothing
             }
-            else if (textBox1.Text == result + "")
-            {
 
-                result = Math.Sqrt(result);
-                textBox1.Text = result + "";
-
-
-            }
             else
             {
-                                       
 
-                num1 = int.Parse(textBox1.Text);        //Set num1 to textbox text
-                num1 = Math.Sqrt(num1);
-                textBox1.Text = num1 + "";          //error if sqrt again
-
+               textBox1.Text = textBox1.Text.Remove(textBox1.Text.LastIndexOf(""),1);
 
             }
+          
+           
         }
 
         private void btnsigns_Click(object sender, EventArgs e)         //button to change the sign of the number
