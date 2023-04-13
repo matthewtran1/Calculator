@@ -1,3 +1,3 @@
-# Calculator
+# Simple Calculator
 
-C#
+Coded in C#.
